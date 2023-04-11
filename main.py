@@ -57,7 +57,7 @@ def rainbowColor(color):
 # Colors
 BACKGROUND = (10, 10, 10)
 SNAKE_COLOR = (0, 177, 255)
-APPLE_COLOR = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+APPLE_COLOR = (random.randint(50, 255), random.randint(50, 255), random.randint(50, 255))
 WHITE_SMOKE = (200, 200, 200)
 
 # Pygame variables
@@ -105,7 +105,7 @@ def main():
 
         # SNAKE Eat APPLE
         if SNAKE[SNAKE_SIZE - 1][0] == APPLE[0] and SNAKE[SNAKE_SIZE - 1][1] == APPLE[1]:
-            APPLE_COLOR = (random.randint(0, 255), random.randint(0, 255), random.randint(0, 255))
+            APPLE_COLOR = (random.randint(50, 255), random.randint(50, 255), random.randint(50, 255))
             generate_apple()
             SNAKE.insert(0, [SNAKE[0][0] + DIRECTION[0], SNAKE[0][1] + DIRECTION[1]])
             SNAKE_SIZE += 1
